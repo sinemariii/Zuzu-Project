@@ -1,0 +1,125 @@
+body {
+  background-color: #d6f4f8; /* Sayfanın arka plan rengini açık gri-mavi tonuna ayarlar */
+  margin: 0; /* Sayfa kenar boşluklarını sıfırlar */
+  padding: 0; /* Sayfa iç boşluklarını sıfırlar */
+  box-sizing: border-box; /* Elemanların genişlik ve yükseklik hesaplamasına padding ve border'ı dahil eder */
+}
+
+#main {
+  max-width: 1032px; /* Ana konteynerin maksimum genişliğini 1032 pikselle sınırlar */
+  margin: 0 auto; /* Sayfayı yatayda ortalar */
+}
+
+#header {
+  padding: 32px; /* Header bölümünün etrafına 32 piksellik iç boşluk ekler */
+}
+
+.logo-box {
+  display: flex; /* Logoyu yatay düzende hizalamak için flexbox kullanır */
+  align-items: center; /* Öğeleri dikeyde ortalar */
+  justify-content: center; /* Öğeleri yatayda ortalar */
+  gap: 14px; /* Logo ikonu ile metni arasında 14 piksel boşluk bırakır */
+}
+
+.logo-icon {
+  width: 44px; /* Logo ikonunun genişliğini 44 piksel olarak ayarlar */
+}
+
+.logo-text {
+  font-family: "Podkova", serif; /* Yazı tipini Podkova olarak belirler */
+  font-weight: 700; /* Kalın (bold) yazı stili uygular */
+  font-size: 48px; /* Yazı boyutunu 48 piksel yapar */
+  color: #807ef2; /* Yazı rengini mor tonunda belirler */
+}
+
+#hero {
+  width: 100%; /* Hero bölümünü tam genişlikte yapar */
+}
+
+.hero-container {
+  display: flex; /* Hero içeriğini yatayda yan yana dizer */
+  width: 100%; /* Konteyner genişliğini %100 yapar */
+  padding: 100px 0; /* Üstten ve alttan 100 piksel iç boşluk bırakır */
+}
+
+.hero-text {
+  flex: 1; /* Hero metin kısmına eşit alan verir (görsel ile paylaşır) */
+}
+
+.title {
+  font-family: "Podkova", serif; /* Başlık fontunu Podkova olarak ayarlar */
+  font-weight: 700; /* Kalın font kullanır */
+  font-size: 64px; /* Başlık boyutunu 64 piksel yapar */
+  color: #1b2939; /* Yazı rengini koyu lacivert tonunda belirler */
+  line-height: 68px; /* Satır yüksekliğini 68 piksel olarak ayarlar */
+  letter-spacing: -2%; /* Harf aralığını biraz daraltır */
+  max-width: 80%; /* Başlığın maksimum genişliğini yüzde 80 ile sınırlar */
+  margin-bottom: 32px; /* Başlıktan sonraki boşluğu 32 piksel yapar */
+}
+
+.desc-1,
+.desc-2 {
+  font-family: "Montserrat", sans-serif; /* Paragraflarda Montserrat fontunu kullanır */
+  font-weight: 400; /* Normal kalınlıkta font kullanır */
+  font-size: 20px; /* Yazı boyutunu 20 piksel yapar */
+  color: #1b2939; /* Yazı rengini koyu lacivert tonunda yapar */
+  line-height: 30px; /* Satır yüksekliğini 30 piksel ayarlar */
+}
+
+.desc-1 {
+  margin-bottom: 24px; /* İlk paragrafın altına 24 piksel boşluk bırakır */
+}
+
+.desc-2 {
+  margin-bottom: 32px; /* İkinci paragrafın altına 32 piksel boşluk bırakır */
+}
+
+.btn {
+  border-radius: 16px; /* Buton köşelerini 16 piksel yuvarlatır */
+  background: linear-gradient(
+    80deg,
+    #e8652d -4.25%,
+    #e82dd2 28.23%,
+    #a650ff 69.35%,
+    #009dff 116.49%
+  ); /* Turuncudan mora ve maviye geçişli bir degrade arka plan oluşturur */
+  padding: 24px; /* Butonun iç boşluğunu 24 piksel yapar */
+  width: 263px; /* Buton genişliğini 263 piksel olarak ayarlar */
+  text-align: center; /* Buton içeriğini ortalar */
+  text-decoration: none; /* Link alt çizgisini kaldırır */
+  border: 5px solid #FFF; /* Kenarlığı kaldırır */
+}
+
+.btn-text {
+  font-family: "Montserrat", sans-serif; /* Buton metni fontunu Montserrat yapar */
+  font-weight: 700; /* Metni kalın yapar */
+  font-size: 25px; /* Yazı boyutunu 20 piksel yapar */
+  color: #ffffff; /* Yazı rengini beyaz yapar */
+}
+
+.hero-img {
+  flex: 1; /* Görsel kısmına eşit alan verir */
+  display: flex; /* Görseli hizalamak için flexbox kullanır */
+  justify-content: center; /* Görseli yatayda ortalar */
+  align-items: center; /* Görseli dikeyde ortalar */
+  position: relative; /* Konumlandırma yapılabilmesi için bağlam oluşturur */
+}
+
+.zuzu-img {
+  transform: scale(3.2) translate(25px, 12px); /* Görseli 3.2 kat büyütüp sağa 25px, aşağı 12px kaydırır */
+  transform-origin: center; /* Dönüşüm merkezini görselin ortasına alır */
+  pointer-events: none; /* Görselin tıklanabilir olmasını devre dışı bırakır */
+}
+
+.logo-go {
+  display: flex; /* Logoyu yatay düzende hizalamak için flexbox kullanır */
+  align-items: center; /* Öğeleri dikeyde ortalar */
+  justify-content: center; /* Öğeleri yatayda ortalar */
+  gap: 1px; /* Logo ikonu ile metni arasında 14 piksel boşluk bırakır */
+}
+
+.logo-img {
+  transform: scale(0.2) translate(25px, 12px); /* Görseli 3.2 kat büyütüp sağa 25px, aşağı 12px kaydırır */
+  transform-origin: center; /* Dönüşüm merkezini görselin ortasına alır */
+  pointer-events: none; /* Görselin tıklanabilir olmasını devre dışı bırakır */
+}
